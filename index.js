@@ -5,7 +5,7 @@
         .module('ngResponsiveBreakpoints', [])
         .provider('responsiveBreakpoints', responsiveBreakpointsProvider);
 
-    function responsiveBreakpointsProvider($rootScope, $window) {
+    function responsiveBreakpointsProvider() {
         this._responsiveBreakpoints = [
             {
                 code: 'xs',
