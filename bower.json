@@ -1,0 +1,17 @@
+{
+  "name": "angular-responsive-breakpoints",
+  "main": "index.js",
+  "homepage": "https://github.com/keenondrums/angular-responsive-breakpoints",
+  "authors": [
+    "andrey.goncharov aka keenondrums (frantic1993@gmail.com)"
+  ],
+  "description": "Lightweight angular service, providing a customizable set of screen breakpoints",
+  "keywords": [
+    "responsive",
+    "adaptive",
+    "breakpoint",
+    "screen",
+    "angular"
+  ],
+  "license": "MIT"
+}

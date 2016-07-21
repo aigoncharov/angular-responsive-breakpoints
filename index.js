@@ -50,19 +50,11 @@
             },
             function (windowWidth) {
                 breakpoints.forEach(function (item, key) {
-                    service[item.code] = windowWidth <= item.value && (breakpoints[key + 1] ? breakpoints[key + 1].value > windowWidth : true) && (breakpoints[key - 1] ? breakpoints[key - 1].value < windowWidth : true);
+                    service[item.code] = windowWidth <= item.value && (breakpoints[key - 1] ? breakpoints[key - 1].value < windowWidth : true);
                 });
 
-                breakpoints.forEach(function (item, key) {
-                    service[item.code + greaterPostfix] = !service[item.code] &&
-                        !breakpoints
-                            .slice(0, key)
-                            .map(function (item) {
-                                return service[item.code];
-                            })
-                            .some(function (item) {
-                                return !!item;
-                            });
+                breakpoints.forEach(function (item) {
+                    service[item.code + greaterPostfix] = windowWidth > item.value;
                 });
             }
         );
