@@ -4,10 +4,6 @@ Angular Responsive Breakpoints is a small lightweight angular service, providing
 
 ## Install
 
-Bower
-```
-bower install --save angular-responsive-breakpoints
-```
 NPM
 ```
 npm install --save angular-responsive-breakpoints
@@ -76,4 +72,11 @@ function config(responsiveBreakpointsProvider) {
     responsiveBreakpointsProvider.setResponsiveBreakpoints(/* pass your collection of breakpoints in ascending order here */);
     responsiveBreakpointsProvider.setGreaterPostfix(/* pass your postfix here */);
 }
+```
+
+# Bower deprecation notice
+Since version 0.2.0 bower package is no longer maintained.
+You still can install an older verion from bower with
+```
+bower install --save angular-responsive-breakpoints
 ```
