@@ -74,7 +74,7 @@ function config(responsiveBreakpointsProvider) {
 }
 ```
 
-# Bower deprecation notice
+## Bower deprecation notice
 Since version 0.2.0 bower package is no longer maintained.
 You still can install an older verion from bower with
 ```
